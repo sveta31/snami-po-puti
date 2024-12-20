@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylef.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poiret+One&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poiret+One&family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="frame-1">
+        <div class="d1">сНамиПоПути</div>
+        <a href="#main" class="d2">Каршеринг</a>
+        <a href="#main2" class="d3">О компании</a>
+        <a href="#main3" class="d4">Приложение</a>
+      </div>
+      <section class="hero">
+        <div class="hero-text">
+            
+           <div class="ybulo"><h1>Ваше решение для городской мобильности</h1></div>
+        
+        </div>
+        <div class="hero-image">
+            <img src="img/обложка.jpg" alt="Car showcase">
+        </div>
+    </section>
+
+    <div class="hero-text">
+      <button id="bookCarButton">ЗАБРОНИРОВАТЬ АВТО</button>
+  </div>
+  
+  <!-- Модальное окно -->
+  <div id="bookingModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Форма бронирования автомобиля</h2>
+          <form id="bookingForm">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" required>
+  
+              <label for="date">Дата бронирования:</label>
+              <input type="date" id="date" required>
+  
+              <label for="car">Выберите автомобиль:</label><br>
+              <select id="car" name="car">
+                  <option value="car1">Volkswagen Polo</option>
+                  <option value="car2">Hyundai Solaris</option>
+                  <option value="car3">Kia Rio</option>
+                  <option value="car4">Skoda Rapid</option>
+                  
+                  <option value="car5">Toyota Camry</option>
+                  <option value="car6">Volkswagen Passat</option>
+                  <option value="car7">Hyundai Sonata</option>
+                  <option value="car8">Skoda Superb</option>
+  
+                  <option value="car9">Mercedes-Benz E-Class</option>
+                  <option value="car10">BMW 5 Series</option>
+                  <option value="car11">Lexus ES</option>
+                  <option value="car12">Audi A6</option>
+              </select><br><br>
+  
+              <label for="pickupLocation">Откуда забрать:</label>
+              <input type="text" id="pickupLocation" required>
+  
+              <label for="pickupTime">Во сколько забрать:</label>
+              <input type="time" id="pickupTime" required>
+  
+              <button type="submit">Забронировать</button>
+          </form>
+          <div id="price"></div>
+      </div>
+  </div>
+<div  id="main">
+
+<div class="priv">
+    <span>
+      <span class="priv-run">
+        На чем поехать?
+        <br />
+      </span>
+      <span class="priv-run2">Выбирай наиболее подходящий вариант</span>
+    </span>
+  </div>
+  <div class="lin">
+    <button id="econom">Эконом-класс</button>
+    <button id="comfort">Комфорт-класс</button>
+    <button id="business">Бизнес-класс</button> 
+  </div>
+  
+  <div class="container" id="car-container">
+    <div class="card economy">
+        <img src="img/фольдсваген.png" alt="Volkswagen Polo" class="card-image">
+        <p class="card-title">Volkswagen Polo</p>
+        <div class="card-text">Компактный и стильный хэтчбек, Volkswagen Polo сочетает в себе немецкое качество и современные технологии. Обладая достаточно просторным салоном для своего класса, Polo предлагает высокий уровень комфорта и безопасности. Вы можете рассчитывать на надежную работу двигателя, а также экономичный расход топлива. 
+
+          <br><strong>Средняя цена аренды:</strong> от 800 рублей в час.</div>
+    </div>
+ 
+
+  <div class="card economy">
+      <img src="img/хендай.png" alt="Hyundai Solaris" class="card-image">
+      <p class="card-title">Hyundai Solaris</p>
+      <div class="card-text">Популярный седан, Hyundai Solaris отличается своей эстетикой и экономичностью. С просторным интерьером и современными функциями, Solaris предлагает отличное сочетание цены и качества. Его динамичные линии и смелый дизайн делают его привлекательным для молодежной аудитории. 
+
+        <br><strong>Средняя цена аренды:</strong> от 700 рублей в час.</div>
+  </div>
+  
+    <div class="card economy">
+        <img src="img/киакиа. (1).png" alt="Kia Rio" class="card-image">
+        <p class="card-title">Kia Rio</p>
+        <div class="card-text">Элегантный и универсальный, Kia Rio предлагает отличное пространство и комфорт для поездок по городу. С доступными функциями мультимедиа и высокой эффективностью двигателя, этот автомобиль является прекрасным выбором как для ежедневных поездок, так и для длинных маршрутов. 
+          <br><strong>Средняя цена аренды:</strong> от 750 рублей в час.</div>
+    </div>
+
+    <div class="card economy">
+        <img src="img/шкода.jfif" alt="Skoda Rapid" class="card-image">
+        <p class="card-title">Skoda Rapid</p>
+        <div class="card-text">Практичный и функциональный, Skoda Rapid выделяется своим просторным багажником и вместительным интерьером. Имея отличные ходовые качества и хорошую управляемость, этот седан создан для тех, кто ценит комфорт и надежность в каждом путешествии. 
+          <br><strong>Средняя цена аренды:</strong> от 800 рублей в час.</div>
+    </div>
+</div>
+<div class="container" id="car-container">
+  <div class="card comfort">
+      <img src="img/тоета камри.png" alt="Toyota Camry" class="card-image">
+      <p class="card-title">Toyota Camry</p>
+      <div class="card-text">
+        <br>- <strong>Характеристика:</strong>
+<br>- <strong>Тип:</strong> Седан
+<br>- <strong>Двигатель:</strong> 2.5L 4-цилиндровый (165 л.с.)
+<br>- <strong>Трансмиссия:</strong> Автоматическая
+<br>- <strong>Расход топлива</strong>: 8.1 л/100 км (город)/ 5.9 л/100 км (трасса)
+<br>- <strong>Комфорт:</strong> Просторный и комфортабельный салон с качественными материалами отделки, интуитивно понятная мультимедийная система.
+<br>- <strong>Безопасность:</strong> Высокий уровень безопасности, системы предотвращения столкновений, адаптивный круиз-контроль.
+
+        <br><strong>Средняя цена аренды:</strong> от 2000 рублей/час. </div>
+  </div>
+
+  <div class="card comfort">
+      <img src="img/фольдсваген пассат.png" alt="Volkswagen Passat" class="card-image">
+      <p class="card-title">Volkswagen Passat</p>
+      <div class="card-text">
+        <br>- <strong>Характеристика:</strong>
+<br>- <strong>Тип:</strong> Седан
+<br>- <strong>Двигатель:</strong> 2.0L TSI (190 л.с.)
+<br>- <strong>Трансмиссия:</strong> DSG (роботизированная)
+<br>- <strong>Расход топлива:</strong> 6.8 л/100 км (город)/ 4.5 л/100 км (трасса)
+<br>- <strong>Комфорт:</strong> Высококачественные материалы в интерьере, просторные сиденья с множеством регулировок, современная мультимедиа.
+<br>- <strong>Безопасность:</strong> Системы контроля слепых зон, помощь при парковке и множество подушек безопасности.
+
+        <br><strong>Средняя цена аренды:</strong> от 2200 рублей в час.</div>
+  </div>
+
+<div class="card comfort">
+    <img src="img/хендай саната.png" alt="Hyundai Sonata" class="card-image">
+    <p class="card-title">Hyundai Sonata</p>
+    <div class="card-text">
+      <br>- <strong>Характеристика:</strong>
+<br>- <strong> Тип:</strong> Седан
+<br>- <strong> Двигатель:</strong> 2.4L 4-цилиндровый (180 л.с.)
+<br>- <strong> Трансмиссия:</strong> Автоматическая
+<br>- <strong> Расход топлива:</strong> 9.0 л/100 км (город)/ 5.8 л/100 км (трасса)
+<br>- <strong> Комфорт:</strong> Современный дизайн, просторный салон, высокая технологичность мультимедийной системы.
+<br>- <strong> Безопасность:</strong> Передовые системы безопасности, включая помощь водителю при экстренном торможении и антиблокировочную систему.
+
+
+      <br><strong>Средняя цена аренды:</strong> от 1800 рублей в час.</div>
+</div>
+  <div class="card comfort">
+      <img src="img/шкода суперб.png" alt="Skoda Superb" class="card-image">
+      <p class="card-title">Skoda Superb</p>
+      <div class="card-text">
+        <br>- <strong>Характеристика:</strong>
+<br>- <strong>Тип:</strong> Седан/универсал
+<br>- <strong>Двигатель:</strong> 2.0L TDI (150 л.с.)
+<br>- <strong>Трансмиссия:</strong> Автоматическая
+<br>- <strong>Расход топлива:</strong> 5.0 л/100 км (город)/ 4.1 л/100 км (трасса)
+<br>- <strong>Комфорт:</strong> Широкий и удобный интерьер, много места для пассажиров и багажа, высокое качество отделки.
+<br>- <strong>Безопасность:</strong> Множество функций защиты, включая систему контроля устойчивости и системы помощи при парковке.
+
+        <br><strong>Средняя цена аренды:</strong> от 1900 рублей в час.</div>
+  </div>
+</div>
+
+<div class="container" id="car-container">
+  <div class="card business">
+      <img src="img/мерседес.png" alt="Mercedes-Benz E-Class" class="card-image">
+      <p class="card-title">Mercedes-Benz E-Class</p>
+      <div class="card-text">
+        <br>- <strong>Описание:</strong>
+        Mercedes-Benz E-Class – это культовый представитель бизнес-класса, который сочетает в себе элегантность, высокий уровень комфорта и передовые технологии. Элегантный дизайн и качественные материалы интерьера создают атмосферу роскоши. Этот автомобиль идеально подходит для деловых поездок и комфортных путешествий.
+
+        <br>- <strong>Характеристики: </strong>  
+        <br>- <strong> Двигатель:</strong>  бензиновый/дизельный, мощность от 150 до 400 л.с.
+        <br>- <strong> Разгон до 100 км/ч:</strong>  от 5,8 секунд (в зависимости от версии)
+        <br>- <strong> Объем багажника:</strong>  540 литров
+        <br>- <strong> Средний расход топлива:</strong>  от 5,0 до 8,5 л/100 км
+
+        <br><strong>Средняя цена аренды:</strong> от 4500 рублей/час. </div>
+  </div>
+
+  <div class="card business">
+      <img src="img/бмв.png" alt="BMW 5 Series" class="card-image">
+      <p class="card-title"> BMW 5 Series</p>
+      <div class="card-text">
+        <br>- <strong>Описание: </strong> 
+        BMW 5 Series – это динамичный седан, который идеально передает обаяние спортивного вождения, не жертвуя комфортом. С передовыми системами помощи водителю и роскошным интерьером, этот автомобиль станет надежным спутником на дороге, объединяя стиль и инновации.
+        
+        <br>- <strong>Характеристики: </strong>  
+        <br>- <strong>Двигатель:</strong>  бензиновый/дизельный, мощность от 150 до 530 л.с.
+        <br>- <strong> Разгон до 100 км/ч:</strong>  от 4,5 секунд (в зависимости от версии)
+        <br>- <strong> Объем багажника:</strong>  530 литров
+        <br>- <strong> Средний расход топлива:</strong>  от 4,5 до 8,0 л/100 км
+
+        <br><strong>Средняя цена аренды:</strong> от 5000 рублей в час.</div>
+  </div>
+
+<div class="card business">
+    <img src="img/лексус-no-bg-preview (carve.photos).png" alt="Lexus ES" class="card-image">
+    <p class="card-title">Lexus ES</p>
+    <div class="card-text">
+      <br>- <strong>Описание: </strong>  
+      Lexus ES – это изысканный седан, который сочетает в себе элегантный дизайн и высокую надежность. Комфортабельный и тихий, он идеально подходит для городских поездок и дальних путешествий. Высокое качество материалов и внимание к деталям создают атмосферу домашнего уюта.
+      
+      <br>- <strong>Характеристики:</strong> 
+      <br>- <strong> Двигатель:</strong> бензиновый, мощность от 150 до 300 л.с.
+      <br>- <strong> Разгон до 100 км/ч:</strong>  от 8,5 секунд (в зависимости от версии)
+      <br>- <strong> Объем багажника:</strong>  400 литров
+      <br>- <strong> Средний расход топлива:</strong> от 5,0 до 7,5 л/100 км
+
+
+      <br><strong>Средняя цена аренды:</strong> от 4000 рублей в час.</div>
+</div>
+  <div class="card business">
+      <img src="img/ауди.png" alt="Audi A6" class="card-image">
+      <p class="card-title">Audi A6</p>
+      <div class="card-text">
+        <br>- <strong>Описание:</strong> 
+        Audi A6 – это премиальный седан, который сочетает в себе элегантный стиль, высокую производительность и современное оснащение. Этот автомобиль предлагает комфортное и просторное interior, высокий уровень технологий, включая мультимедийную систему, адаптивный круиз-контроль и различные системы безопасности. Audi A6 отлично подходит для как городских поездок, так и дальних поездок за город.
+
+        <br>- <strong>Характеристики:</strong>
+        <br>- <strong> Мощность:</strong> от 150 до 335 л.с. в зависимости от версии
+        <br>- <strong> Объем двигателя:</strong> от 2.0 до 3.0 литра
+        <br>- <strong> КПП:</strong> 7-ступенчатая DSG или вариатор
+        <br>- <strong> Разгон 0-100 км/ч:</strong> от 5,1 секунды (в спортивной версии)
+        <br>- <strong> Расход топлива:</strong> от 5 до 8 л/100 км в зависимости от режима вождения
+
+        <br><strong>Средняя цена аренды:</strong> от 4000 рублей в час.</div>
+  </div>
+</div>
+    <div  id="main2">
+    <div class="poch">Почему именно сНамиПоПути?</div>
+    </div>
+    <div class="container">
+      <div class="block">
+      <div class="block1">
+           <div class="avat1">Доступные цены от <b>12 руб/мин</b></div>
+           <div class="avak1"></div><img src="img/деньги-no-bg-preview (carve.photos).png" alt="Деньги">
+         
+          <div class="avat2">Поездки <b>с 18 лет</b></div>
+          <div class="avak2"></div><img src="img/права2-no-bg-preview (carve.photos).png" alt="Права">
+      </div>
+      
+      </div>
+      <div class="block">
+          <div class="t3000">Более 3000 машин</div>
+          <img src="img/биби.png" alt="Биби">
+      </div>
+      <div class="block">
+          <div class="tt">Наши бонусы:</div>
+          <div class="ttt">
+              <ul>
+                  <li>за друзей</li>
+                  <li>за километры</li>
+                  <li>за дни</li>
+                  <li>за активность</li> 
+                  <li>за участие в акциях</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  
+
+
+    <div  id="main3">
+    <span class="priv-run">
+       Ваш ключ к быстрому передвижению - наше приложение
+
+      </span>
+  
+
+   <div class="d">
+    
+    <img src="img/Ellipse 1.png">
+    <div class="image-text-container">
+      <div class="text-number">1</div>
+        <img src="img/Rectangle 10.png" alt="Описание">
+        <div class="text-overlay">Скачивайте приложение сНамиПоПути</div>
+      </div>
+   </div>
+
+   <div class="d">
+    <div class="image-text-container">
+        <img src="img/Rectangle 10.png" alt="Описание">
+        <div class="text-overlay">Приготовьте паспорт, чтобы заполнить договор на расстоянии</div>
+    </div>
+    <div class="image-text-container">
+        <img src="img/Ellipse 1.png" alt="Эллипс">
+        <div class="text-number2">2</div> 
+    </div>
+</div>
+
+       
+    <div class="d">
+        <img src="img/Ellipse 1.png">
+        <div class="image-text-container">
+          <div class="text-number">3</div>
+            <img src="img/Rectangle 10.png" alt="Описание">
+            <div class="text-overlay">Загружайте фото прав</div>
+          </div>
+    </div>
+       
+    <div class="d">
+      <div class="image-text-container">
+          <img src="img/Rectangle 10.png" alt="Описание">
+          <div class="text-overlay">Приготовьте паспорт, чтобы заполнить договор на расстоянии</div>
+      </div>
+      <div class="image-text-container">
+          <img src="img/Ellipse 1.png" alt="Эллипс">
+          <div class="text-number2">4</div>
+      </div>
+  </div>
+          
+          
+            <hr style="width:100%; height:6px; background-color: #282E3F; border:none;" />
+            <div class="footer-content">
+              <div class="footer-logo">сНамиПоПути</div>
+              <div class="footer-links">
+                <a href="#" id="privacy-policy">Политика конфиденциальности</a>
+              </div>
+              <div class="footer-contact">
+                <p>телефон горячей линии: <a href="tel:+79029618436">+7 (902) 961-84-36</a></p>
+            </div>
+            
+          </div>
+          
+          <div class="footer">
+            <a href="https://vk.com/semicveetikk" target="_blank">
+                <img src="img/контакте.png" alt="VK">
+            </a>
+            <a href="https://t.me/ksvetochkaaaa" target="_blank">
+                <img src="img/telegram.svg" alt="Telegram">
+            </a>
+        </div>
+
+            <button class="back-to-top" id="backToTopBtn">↑</button>
+            <script src="style.js"></script>
+</body>
+</html>
